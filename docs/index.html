@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dining Room PC</title>
+  <meta name="description" content="Dining Room PC — Indie games made from the dining room.">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #1a1a1e;
+      --bg-card: #24242a;
+      --text: #e8e4df;
+      --text-muted: #9a958e;
+      --accent: #c8b48a;
+      --accent-hover: #ddc99e;
+      --border: #3a3a42;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---- Layout ---- */
+    .wrapper {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---- Header / Hero ---- */
+    header {
+      padding: 4rem 0 2rem;
+      text-align: center;
+    }
+
+    .logo {
+      width: 160px;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 28em;
+      margin: 0 auto;
+    }
+
+    /* ---- Sections ---- */
+    .section {
+      padding: 2rem 0;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* ---- Steam Embed Card ---- */
+    .steam-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .steam-card iframe {
+      border: 0;
+      width: 100%;
+      max-width: 646px;
+      height: 190px;
+    }
+
+    /* ---- Support ---- */
+    .support {
+      text-align: center;
+      padding: 2rem 0 4rem;
+    }
+
+    .support a {
+      display: inline-block;
+      transition: opacity 0.2s ease;
+    }
+
+    .support a:hover {
+      opacity: 0.85;
+    }
+
+    .support img {
+      height: 52px;
+      width: auto;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      margin-top: auto;
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 480px) {
+      header {
+        padding: 2.5rem 0 1.5rem;
+      }
+
+      .logo {
+        width: 120px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .tagline {
+        font-size: 1rem;
+      }
+
+      .steam-card {
+        padding: 1rem;
+        border-radius: 8px;
+      }
+
+      .steam-card iframe {
+        height: 190px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrapper">
+      <img
+        src="logo_fill.png"
+        alt="Dining Room PC logo"
+        class="logo"
+        width="160"
+        height="160"
+      >
+      <h1>Dining Room PC</h1>
+      <p class="tagline">Indie games made from the dining room.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrapper">
+        <p class="section-title">Now on Steam</p>
+        <div class="steam-card">
+          <iframe
+            src="https://store.steampowered.com/widget/4164130/"
+            frameborder="0"
+            width="646"
+            height="190"
+            title="Steam store widget"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="support">
+      <div class="wrapper">
+        <p class="section-title">Support</p>
+        <a
+          href="https://www.buymeacoffee.com/diningroompc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png"
+            alt="Buy Me A Coffee"
+          >
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      &copy; 2026 Dining Room PC
+    </div>
+  </footer>
+
+</body>
+</html>
