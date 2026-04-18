@@ -1,14 +1,16 @@
-<p align="center">
-  <img src="logo_fill.png" alt="Logo" width="160">
-</p>
+<div style="max-width: 840px; margin: 0 auto; padding: 0 24px;">
+  <p align="center">
+    <img src="logo_fill.png" alt="Logo" width="160">
+  </p>
 
-Hi, my name is Zach, and I’m making Stampholder Value, a deck-building game for your coworkers.
+  <p>Dining Room PC is a small indie game studio building Stampholder Value.</p>
 
-# Games
+  <h1>Games</h1>
 
-<p align="center">
-  <iframe src="https://store.steampowered.com/widget/4164130/" frameborder="0" width="646" height="190" style="max-width: 100%;"></iframe>
-</p>
-<p align="center">
-  <a href="https://www.buymeacoffee.com/diningroompc" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-</p>
+  <p align="center">
+    <iframe src="https://store.steampowered.com/widget/4164130/" frameborder="0" width="646" height="190" style="max-width: 100%;"></iframe>
+  </p>
+  <p align="center">
+    <a href="https://www.buymeacoffee.com/diningroompc" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+  </p>
+</div>
