@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dining Room PC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --page-width: 840px;
+        --side-padding: 24px;
+        --text-color: #1f1f1f;
+        --bg-color: #fbf8f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Nunito", "Avenir Next", "Segoe UI", sans-serif;
+        color: var(--text-color);
+        background:
+          radial-gradient(circle at top, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.86)),
+          linear-gradient(180deg, #f5ede2 0%, var(--bg-color) 100%);
+      }
+
+      main {
+        width: min(100%, var(--page-width));
+        margin: 0 auto;
+        padding: 48px var(--side-padding) 72px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .logo {
+        display: inline-block;
+        width: 160px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .intro {
+        margin: 24px 0 40px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      h1 {
+        margin: 0 0 24px;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        text-align: center;
+      }
+
+      .steam-widget {
+        width: 646px;
+        max-width: 100%;
+        border: 0;
+      }
+
+      .support-link {
+        display: inline-block;
+        margin-top: 24px;
+      }
+
+      .support-link img {
+        width: 217px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding: 32px 18px 48px;
+        }
+
+        .intro {
+          font-size: 1.05rem;
+        }
+
+        .steam-widget {
+          height: 190px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="center">
+        <img class="logo" src="logo_fill.png" alt="Dining Room PC logo">
+      </p>
+
+      <p class="intro">Dining Room PC is a small indie game studio building Stampholder Value.</p>
+
+      <h1>Games</h1>
+
+      <p class="center">
+        <iframe
+          class="steam-widget"
+          src="https://store.steampowered.com/widget/4164130/"
+          width="646"
+          height="190"
+          loading="lazy"
+          title="Stampholder Value on Steam"
+        ></iframe>
+      </p>
+
+      <p class="center">
+        <a class="support-link" href="https://www.buymeacoffee.com/diningroompc" target="_blank" rel="noreferrer">
+          <img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee">
+        </a>
+      </p>
+    </main>
+  </body>
+</html>
